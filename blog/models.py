@@ -45,3 +45,4 @@ class File(models.Model):
     def __str__(self):
         return self.file.name
     
+#mozhebi slightly zaboraiv deka postoi file model lol aj whatever

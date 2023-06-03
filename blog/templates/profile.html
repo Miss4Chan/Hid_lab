@@ -10,17 +10,8 @@
 <body>
     <div class="container">
         <div class="row text-center">
-            <div>
-            <!--Od toa shto se prakja vo contextot na viewto
-            go chitame tuka--> 
-            {% for p in posts %}
-            <ul>
-                <li>{{p.title}}</li>
-                <li>{{p.author}}</li>
-                <li>{{p.creationDate}}</li>
-            </ul>
-            {% endfor %}
+            {{ user.name }} {{ user.surname }}
         </div>
-
+        <!--mozheme so for da mu gi listame postovite zatoa shto gi prakjame vo context-->
     </div>
 </body>

@@ -10,17 +10,11 @@
 <body>
     <div class="container">
         <div class="row text-center">
-            <div>
-            <!--Od toa shto se prakja vo contextot na viewto
-            go chitame tuka--> 
-            {% for p in posts %}
-            <ul>
-                <li>{{p.title}}</li>
-                <li>{{p.author}}</li>
-                <li>{{p.creationDate}}</li>
-            </ul>
-            {% endfor %}
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form }}
+                <button class="btn btn-success" type="submit">Submit</button>
+            </form>
         </div>
-
     </div>
 </body>
